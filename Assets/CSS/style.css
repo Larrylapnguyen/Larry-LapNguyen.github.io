@@ -101,7 +101,7 @@ a {
 
 /* Start Of  Landing Section */
 /* Keyframe Landing BTN */
-@keyframes shadow-pulse {
+@keyframes down-pulse {
       0% {
             padding-top: 15px;
             color: #516ad8bd;
@@ -122,16 +122,34 @@ a {
       }
 }
 
+@keyframes up-pulse {
+      0% {
+            padding-left: 25px;
+            padding-right: 25px;
+      }
+
+      50% {
+            padding-left: 23px;
+            padding-right: 23px;
+      }
+
+      100% {
+            padding-left: 25px;
+            padding-right: 25px;
+      }
+}
+
+
 /* End Keyframe */
 .front {
       padding: 10px 45px 10px 45px;
       border-radius: 5px;
-      -webkit-animation: shadow-pulse 1s infinite;
-      animation: shadow-pulse 1s infinite;
+      -webkit-animation: down-pulse 1s ease infinite;
+      animation: down-pulse 1s ease infinite;
 }
 
 .front:hover {
-      background-color: #6c93ff;
+      background-color: #1e376e;
       color: #fff;
       cursor: pointer;
       transition: background-color 500ms ease;
@@ -210,7 +228,7 @@ nav {
 
 /* About Me */
 .about {
-      padding-top: 50px;
+      padding-top: 100px;
       max-width: 700px;
       margin: auto;
 }
@@ -222,6 +240,10 @@ nav {
 
 .about p {
       margin-top: 40px;
+}
+
+.about h2 {
+      margin-top: 30px;
 }
 
 /* About Me End */
@@ -268,6 +290,30 @@ footer p {
       margin: 0;
 }
 
+.up {
+      margin-top: 10px;
+      padding: 2px 30px 2px 30px;
+      border-radius: 5px;
+      animation: up-pulse 1s ease infinite;
+      -webkit-animation: up-pulse 1s ease infinite;
+}
+
+.up:hover {
+      background-color: #2137b6;
+      color: #fff;
+}
+
+/* Media Queries */
+@media(min-width:561px) {
+      .short {
+            display: none;
+      }
+
+      .up {
+            display: none;
+      }
+}
+
 /* Small Screens */
 @media(max-width:560px) {
       .content .title {
@@ -275,8 +321,8 @@ footer p {
       }
 
       .content {
-            top: 5%;
-            margin-top: 40px;
+            top: 20%;
+            margin-top: 80px;
             margin-left: -150px;
       }
 
@@ -286,18 +332,30 @@ footer p {
             width: 140px;
       }
 
-      .content .blerb {
+      .content div {
+            visibility: hidden;
+      }
+
+      .content p {
+            display: none;
+      }
+
+      nav {
             display: none;
       }
 
       .about {
-            padding-top: 30px;
-            max-width: 400px;
+            padding-top: 100px;
+            max-width: 340px;
             margin: auto;
       }
 
       .full {
             display: none;
+      }
+
+      .short {
+            padding-top: 20px;
       }
 
       .grid-2 {
