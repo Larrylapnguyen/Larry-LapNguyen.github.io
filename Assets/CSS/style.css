@@ -25,7 +25,7 @@ a {
 }
 
 .container {
-      max-width: 960px;
+      max-width: 1200px;
       margin: auto;
       overflow: hidden;
       padding: 4rem 1rem;
@@ -91,8 +91,8 @@ a {
 }
 
 .active {
-      background: #fff;
-      color: #2d4179;
+      background: #4d9bf3;
+      color: #f7f7f7;
       padding: 10px 20px 10px 20px;
       border-radius: 6px;
 }
@@ -227,9 +227,10 @@ nav {
 
 /* About Me */
 .about {
-      padding-top: 100px;
+      padding-top: 150px;
       max-width: 700px;
       margin: auto;
+      padding-bottom: 70px;
 }
 
 .about img {
@@ -242,9 +243,13 @@ nav {
 }
 
 .about h2 {
-      margin-top: 30px;
+      margin-top: 40px;
 }
+.about img{
+      width: 200px;
+      height: auto;
 
+}
 /* About Me End */
 
 /* Links */
@@ -265,7 +270,7 @@ nav {
 }
 
 .works {
-      padding-top: 70px;
+      border-top: 1px #e2e2e2 solid;
 }
 
 .works a {
@@ -294,11 +299,21 @@ nav {
 
 footer {
       padding: 2rem;
+      margin: auto;
 }
 
+
 footer p {
-      margin: 0;
+      margin: 10px;
+      text-align: left;
 }
+footer a{
+      color: #2f89ff;
+}
+footer a:hover{
+      color: #dbdbdb;
+}
+
 
 .up {
       margin-top: 10px;
@@ -335,7 +350,6 @@ footer p {
             margin-top: 80px;
             margin-left: -150px;
       }
-
 
       .content .logo {
             height: 140px;
@@ -407,4 +421,5 @@ footer p {
       .grid-3 {
             grid-template-columns: repeat(2, 1fr);
       }
+
 }
