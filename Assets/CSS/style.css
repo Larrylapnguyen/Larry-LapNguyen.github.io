@@ -9,7 +9,7 @@ html {
 body {
       background-color: #061029ee;
       margin: 0;
-      color: #fff;
+      color: #d1d1d1;
       font-family: 'Ubuntu', sans-serif;
 }
 
@@ -45,6 +45,7 @@ a {
       content: ' ';
       height: 100vh;
       width: 100%;
+      /* BG from Pexels.com */
       background-image: url(../IMG/back.jpg);
       background-size: cover;
       background-repeat: no-repeat;
@@ -227,8 +228,9 @@ nav {
 
 /* About Me */
 .about {
+      line-height: 1.5rem;
       padding-top: 150px;
-      max-width: 700px;
+      max-width: 600px;
       margin: auto;
       padding-bottom: 70px;
 }
@@ -245,11 +247,13 @@ nav {
 .about h2 {
       margin-top: 40px;
 }
-.about img{
+
+.about img {
       width: 200px;
       height: auto;
 
 }
+
 /* About Me End */
 
 /* Links */
@@ -274,27 +278,37 @@ nav {
 }
 
 .works a {
-      color: #333;
+      color: #e9e9e9;
 }
 
+/* Projects */
 .projects a {
       color: #333;
 }
 
+.projects a:hover {
+      color: #2f89ff;
+}
+
+.projects .git-left {
+      margin-left: 50px;
+}
+
 .projects img {
-      width: 300px;
+      width: 325px;
       height: auto;
 }
 
+
 /* End Works */
 .bg-light {
-      background: #fff;
+      background: #eeecec;
       color: #1c337b;
 }
 
 .bg-dark {
       background: #333;
-      color: #fff;
+      color: #eeecec;
 }
 
 footer {
@@ -307,11 +321,18 @@ footer p {
       margin: 10px;
       text-align: left;
 }
-footer a{
+
+footer a {
       color: #2f89ff;
 }
-footer a:hover{
+
+footer a:hover {
       color: #dbdbdb;
+}
+
+footer div {
+      width: 25%;
+      margin: 0 auto;
 }
 
 
@@ -401,6 +422,25 @@ footer a:hover{
 
       .navi {
             margin-left: 20%;
+      }
+      footer div {
+            width: 70%;
+            margin: 0 auto;
+      }
+
+}
+@media(max-width: 692px) {
+      footer div {
+            width: 70%;
+            margin: 0 auto;
+      }
+
+}
+@media(max-width: 448px) {
+
+      footer div {
+            width: 80%;
+            margin: 0 auto;
       }
 
 }
