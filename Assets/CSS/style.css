@@ -295,10 +295,12 @@ nav {
 }
 
 .projects img {
-      width: 325px;
+      width: 350px;
       height: auto;
 }
-
+.more img{
+      height: 170px;
+}
 
 /* End Works */
 .bg-light {
