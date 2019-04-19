@@ -298,7 +298,8 @@ nav {
       width: 350px;
       height: auto;
 }
-.more img{
+
+.more img {
       height: 170px;
 }
 
@@ -426,12 +427,14 @@ footer div {
       .navi {
             margin-left: 20%;
       }
+
       footer div {
             width: 70%;
             margin: 0 auto;
       }
 
 }
+
 @media(max-width: 692px) {
       footer div {
             width: 70%;
@@ -439,6 +442,7 @@ footer div {
       }
 
 }
+
 @media(max-width: 448px) {
 
       footer div {

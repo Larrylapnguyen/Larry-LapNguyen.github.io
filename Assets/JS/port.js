@@ -1,6 +1,5 @@
 $(document).ready(function () {
 	var nav = $(".ntag");
-	// var vh = $(window).height();
 
 	$(window).scroll(function () {
 		if ($(this).scrollTop() > $(window).height()) {
@@ -15,12 +14,8 @@ $(document).ready(function () {
 		}
 	});
 
-	// Basic Code keep it 
-
 	$(document).on("scroll", onScroll);
-
-	// Use Your Class or ID For Selection 
-
+	
 	function onScroll(event) {
 		var scrollPos = $(document).scrollTop();
 		$('.stick a').each(function () {
